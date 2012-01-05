@@ -1,3 +1,6 @@
+" include:
+" source $HOME/dotfiles/.vimrc
+
 autocmd!                                                                                                                                                                                     
 "colorscheme torte
 colorscheme desert
@@ -17,6 +20,8 @@ if has('gui_macvim')
     set antialias
     set guifont=Monaco:h14
     colorscheme macvim
+    nnoremap <Space>. :<C-u>edit $MYVIMRC<Enter>
+    nnoremap <Space>S. :<C-u>source $MYVIMRC<Enter>
 endif
 
 set noimdisableactivate
@@ -46,9 +51,6 @@ filetype plugin on
 filetype indent on
 
 
-nnoremap <Space>. :<C-u>edit $MYVIMRC<Enter>
-nnoremap <Space>S. :<C-u>source $MYVIMRC<Enter>
-
 nnoremap j gj
 nnoremap k gk
 nnoremap gk k
@@ -69,5 +71,15 @@ set cursorline
 "<F6>  文頭にタイムスタンプを挿入してinsertモードへ移行nmap <F6> -- <ESC>i<C-R>=strftime("%Y/%m/%d (%a) %H:%M")<CR> --<CR>
 nmap <F6> <ESC>i -- <C-R>=strftime("%Y/%m/%d (%a) %H:%M")<CR> --<CR>
 
-set history=100		" keep 100 lines of command line history　　　<--- コマンド履歴保持数
+"history
+set history=100 " keep 100 lines of command line history　　　<--- コマンド履歴保持数
+
+"search hilight
+nnoremap <ESC><ESC> :noh<Enter>
+
+"http://vim-users.jp/2010/02/hack125/
+set virtualedit+=block
+
+set lcs=tab:>.,eol:$,trail:_,extends:\
+
 
