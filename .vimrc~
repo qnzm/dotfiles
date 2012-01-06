@@ -80,3 +80,9 @@ nnoremap <ESC><ESC> :noh<Enter>
 "http://vim-users.jp/2010/02/hack125/
 set virtualedit+=block
 
+set lcs=tab:>.,eol:$,trail:_,extends:\
+
+"cd.vim
+au   BufEnter *   execute ":lcd " . expand("%:p:h") 
+
+

@@ -82,4 +82,7 @@ set virtualedit+=block
 
 set lcs=tab:>.,eol:$,trail:_,extends:\
 
+"cd.vim : auto cd
+au   BufEnter *   execute ":lcd " . expand("%:p:h") 
+
 
