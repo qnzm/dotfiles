@@ -51,6 +51,7 @@ if has('vim_starting')
         call neobundle#rc(expand('~/.bundle'))
 endif
 
+NeoBundle 'git://github.com/tsaleh/vim-align.git'
 "NeoBundle 'git://github.com/Shougo/clang_complete.git'
 NeoBundle 'git://github.com/Shougo/echodoc.git'
 NeoBundle 'git://github.com/Shougo/neocomplcache.git'
@@ -129,4 +130,7 @@ nnoremap <space>s. :<c-u>source $mygvimrc<enter>
 
 "clipboard
 set clipboard=unnamed
+
+"ejs filetype
+autocmd BufNewFile,BufRead *.ejs set filetype=html
 
