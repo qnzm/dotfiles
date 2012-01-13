@@ -125,12 +125,16 @@ nnoremap <c-h> :<c-u><space>help<space>
 nnoremap <c-h><c-h> :<c-u>help<space><c-r><c-w><enter>
 
 "edit .vimrc
-nnoremap <space>. :<c-u>edit $mygvimrc<enter>
-nnoremap <space>s. :<c-u>source $mygvimrc<enter>
+nnoremap <space>. :<c-u>edit $MYVIMRC<enter>
+nnoremap <space>s. :<c-u>source $MYVIMRC<enter>
 
 "clipboard
 set clipboard=unnamed
 
 "ejs filetype
 autocmd BufNewFile,BufRead *.ejs set filetype=html
+
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+
 
