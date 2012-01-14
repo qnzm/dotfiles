@@ -64,6 +64,10 @@ NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
 NeoBundle 'git://github.com/thinca/vim-quickrun.git'
 "NeoBundle "http://www.vim.org/scripts/download_script.php?src_id=4976"
 
+"neobundle javascript
+NeoBundle 'JavaScript-syntax'
+NeoBundle 'pangloss/vim-javascript'
+
 filetype plugin on
 filetype indent on
 
@@ -137,4 +141,7 @@ autocmd BufNewFile,BufRead *.ejs set filetype=html
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
+" jslint
+autocmd FileType javascript :compiler gjslint
+autocmd QuickfixCmdPost make copen
 
