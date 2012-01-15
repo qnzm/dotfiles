@@ -56,13 +56,15 @@ NeoBundle 'git://github.com/tsaleh/vim-align.git'
 NeoBundle 'git://github.com/Shougo/echodoc.git'
 NeoBundle 'git://github.com/Shougo/neocomplcache.git'
 NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
-"NeoBundle 'git://github.com/Shougo/unite.vim.git'
 "NeoBundle 'git://github.com/Shougo/vim-vcs.git'
-"NeoBundle 'git://github.com/Shougo/vimfiler.git'
-"NeoBundle 'git://github.com/Shougo/vimshell.git'
 "NeoBundle 'git://github.com/Shougo/vinarise.git'
 NeoBundle 'git://github.com/thinca/vim-quickrun.git'
-"NeoBundle "http://www.vim.org/scripts/download_script.php?src_id=4976"
+NeoBundle 'git://github.com/vim-scripts/mru.vim.git'
+
+NeoBundle 'git://github.com/Shougo/vimproc.git'
+NeoBundle 'git://github.com/Shougo/unite.vim.git'
+NeoBundle 'git://github.com/Shougo/vimfiler.git'
+NeoBundle 'git://github.com/Shougo/vimshell.git'
 
 "neobundle javascript
 NeoBundle 'JavaScript-syntax'
