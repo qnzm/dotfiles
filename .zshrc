@@ -150,7 +150,7 @@ esac
 [ -f ~/.zshrc.mine ] && source ~/.zshrc.mine
 
 ## start screen session
-export SCREENDIR="/${USER}/.screen"
+export SCREENDIR="~/.screen"
 if [ "$TERM" = 'xterm' -o "$TERM" = 'xterm-color' -o "$TERM" = 'linux' ]; then
 	  screen -rx || screen -D -RR
   fi
